@@ -50,10 +50,14 @@ class FileInfoCard extends StatelessWidget {
           ),
           Text(
             info.totalStorage!,
-            style: Theme.of(context)
-                .textTheme
-                .caption!
-                .copyWith(color: Colors.white),
+            style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+            // style: Theme.of(context)
+            //     .textTheme
+            //     .caption!
+            //     .copyWith(color: Colors.white),
           ),
           ProgressLine(
             color: info.color,
